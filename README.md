@@ -87,7 +87,8 @@ Submit
 
 ToDo
 ---
-* Choose a section [Directions](https://docs.google.com/document/d/1e-FD2u_JIjxvkDdg0RV7lYku2RZ_xVSToW3UmLjNIWg/edit?usp=sharing)
+* Choose a section 
+* [Directions](https://docs.google.com/document/d/1e-FD2u_JIjxvkDdg0RV7lYku2RZ_xVSToW3UmLjNIWg/edit?usp=sharing)
 
 Changelog
 ---
