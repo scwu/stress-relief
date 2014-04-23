@@ -4,28 +4,37 @@
 <div class="row">
   <div class="span8 offset2">
     <div class="centered">
-      <h1 class="fascinate-font">Flask bootstrap project</h1>
+      <h1>Stress Reliever</h1>
 
-      <p class="lead">Start reading the wiki of the project; if you haven't!</p>
-      <a href="https://github.com/albertogg/flask-bootstrap-skel/wiki" class="btn-large btn-success">Read the wiki!</a>
+      <p class="lead">Don't carry the weight of the world alone.</p>
+      <a href="#myModal" role="button" class="btn" data-toggle="modal">Sign in</a>
+
+            <!-- Modal -->
+        <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel">Destress!</h3>
+          </div>
+          <div class="modal-body">
+            <form>
+              <fieldset>
+                <legend>Sign In</legend>
+                <label>email address</label>
+                <input type="text" id="email-add" placeholder="email address">
+              </fieldset>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+            <button class="btn btn-primary" id="signin-button">Save changes</button>
+          </div>
+        </div>
     </div>
-    <hr>
   </div>
 </div>
-<div class="row">
-  <div class="span4 offset2">
-    <h4>base.html</h4>
-    <p>This template is the main layout. It calls the <strong>header, footer </strong>and renders the <strong>index</strong> file. It's located under <strong>'application/templates/base.html'</strong></p>
-    <h4>index.html</h4>
-    <p>Search and modify the Index file, located under <strong>'application/templates/info/index.html'</strong></p>
-  </div>
-  <div class="span4">
-    <h4>CSS / JS / IMG</h4>
-    <p>The stylesheets and javascript files are located in the <strong>'application/static/css' &amp 'application/static/js folders'</strong></p>
-    <h4>Sticky footer</h4>
-    <p>In the css folder I've added the code for a sticky footer!. Take a look on the <strong>custom.css</strong> file for details.</p>
-  </div>
-</div>
-
-
+{% endblock %}
+{% block js %}
+  <script>
+    $(document).ready(homeView.init);
+  </script>
 {% endblock %}

@@ -1,5 +1,25 @@
 from application import db
 
+class Question(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    question = db.Column(db.String(1000))
+    owner = db.Column(db.String(80))
+    answer = db.Column(db.String(1000), nullable=True)
+    responder = db.Column(db.String(80), nullable=True)
+    completed = db.Column(db.Boolean, default=False)
+
+    def __init__(self, question, owner):
+        self.question = question
+        self.owner = owner
+
+    def __repr__(self):
+        return '<Question %r>' % self.question
+
+    def addAnswer(self, answer, responder):
+        self.answer = answer
+        self.responder = responder
+        self.completed = True
+
 ##
 # Create your own models here and they will be imported automaticaly. or
 # use a model per blueprint.

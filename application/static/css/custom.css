@@ -12,12 +12,6 @@ html, body {
   padding-bottom: 40px;
 }
 
-.fascinate-font {
-  font-family: 'Fascinate', cursive;
-  text-align: center;
-  padding-bottom: 20px;
-}
-
 #wrap {
   min-height: 100%;
   height: auto !important;
